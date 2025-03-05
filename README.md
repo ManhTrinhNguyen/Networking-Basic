@@ -202,6 +202,44 @@
   - There is a ARP - Address Resolution Protocol tie Layer 2 and 3 together 
 ```
 
+**Layer 4 : Transport | Service to Service**
+
+<img width="700" alt="Screenshot 2025-03-05 at 14 54 06" src="https://github.com/user-attachments/assets/c2fab24e-dcdf-4202-b943-a60df60e0609" />
+
+```
+  - The overall goal of Layer 4 is Service to Service Delivery
+
+  - Let say I have 1 computer that run multiple Software at the same time . Each of those program meant to send and recived data on the Wire
+
+  - All of those Data will be destined to this Layer 3 Header to accomplish End to End delivery . and Layer 2 Header to accomplish Hop to Hop delivery . How do I make sure the right Program Reivce the right Packets ?
+
+  - Layer 4 is there to distingush Data Stream . It will take all the incoming data and make sure the Right Program get the Right Data
+
+  - Layer 4 Addressing Scheme : Ports .
+
+  - There are 2 set of PORTS : 0-65535 TCP, 0-65535 UDP
+
+  - TCP and UDP is 2 different Strategy to distingush Data Stream . TCP favor reliable , UDP favor efficency
+
+  - Every single program that is expected to recivece or send data on the Wire is going to associated with a particular PORT Number then when data arrives on the Wires it's going to include the Layer 4 Header in addition Layer 2 and 3
+
+  - That Layer 4 Header will indicate which particular program should be reciving the data that what's Layer 4 going to use to make sure the right program recivec the righ 1's and 0's
+```
+
+**More Detail Layer 4**
+
+```
+  - Server is noting more is a Computer has software installed that know how to response the Specific Request .
+
+  - Server listen for request to pre-defined Ports
+
+  - When a client is making a request to these Server it is not only making a request to this IP Address it is also make a request to a specific PORT
+
+  - Then Each request make by Client . The Client is going to choose a random port Number to use as a source PORT for Connection
+
+  - So the Connection from Client to Server will container : Source IP address , Source PORT and Destination IP Address and Destination PORT .
+
+```
 
 
 
