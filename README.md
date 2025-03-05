@@ -21,3 +21,11 @@
 
   - A Server is a Computer with software installed which know how to Response the Request 
 ```
+
+#### IP Address 
+
+```
+  - IP Address are the Identify of each Host
+
+  - Each Host must have the IP Address to send and recieve Package on Network 
+```
