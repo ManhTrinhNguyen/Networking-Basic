@@ -122,6 +122,70 @@
   - All of them perform Routing or Switching or Both
 ```
 
+### OSI Models
+
+```
+  - The rules of Networking divide into 7 Layers
+
+  - Each layer serves a specific function
+
+  - If all layers are functioning . Hosts can share data
+```
+
+**Layer 1: Physical Layer**
+
+```
+  - Computer Data exist in form of Bits (1's and 0's)
+
+  - The goal of Physical Layer is Transporting Bits
+
+  - Anything that contribute moving ones and zeros from this computer to this computer is consider a layer one technology
+
+  - For example : Cable, Wire, Wi-fi... 
+
+```
+
+**Layer 2 : Data Link | Hop to Hop**
+
+<img width="700" alt="Screenshot 2025-03-05 at 14 01 04" src="https://github.com/user-attachments/assets/984ee4cc-6e10-4e6a-9a31-c367527a2e7a" />
+
+```
+  - Layer 2 is going to interact with Wire (Layer one) . Going to put bits on the Wire and retrive bits from wire
+
+  - Which mean whatever this wire actually connects on the Computer is consider the layer 2 item : NIC (Network Interface Card) / Wifi Access Card
+
+  - The overall goal of layer 2 is what I am going to call Hop to Hop delivery .
+
+  - Meaning Layer 2 Exist to take 1's and 0's from this NIC and move it to other NIC . To Accomplish this goal layer 2 is going to use a specific Addressing Scheme
+
+  - Addressing Scheme : is known as MAC Address
+
+  - MAC Address is 48 bits which are represented as 12 hex digits . MAC Address allow data to go from 1 NIC to the next NIC
+
+  - Every single NIC has a unique MAC Address
+
+  - Switches also exist at Level 2 .
+
+  - Swtiches are devices that facilitate communication within network meaning if these 2 hosts are connected via this Switch . Switch is going to help traffic move along to accomplish this Hop . Moreover Switches allow many devices connected to them
+
+  - Generally with the Internet I am communicating with things that are far away so it is very common for communication between hosts to require multiple hops . Meaning we need to jump accross multiple Router to get to the target Host . Each of those Router are connected to a wire using a NIC and therefore each of those NIC has its own MAC Address . And Layer 2 will handle taking data from First Mac Address and deliver it to next MAC Address then from NIC to NIC
+
+  - If Layer 2 is taking care of eveything Hop . What is taking care of ensuring data goes from this endpoint to the next . So that Layer 3 come in to play
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
