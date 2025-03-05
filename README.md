@@ -173,7 +173,34 @@
   - If Layer 2 is taking care of eveything Hop . What is taking care of ensuring data goes from this endpoint to the next . So that Layer 3 come in to play
 ```
 
+**Layer 3: Network**
 
+```
+  - Layer 3 goal is call End to End delivery
+
+  - Layer 3 Addressing Scheme : IP Address
+
+  - Every hosts will be identify by its IP Address . These IP Address allow data go from A to B
+
+  - Layer 3 technology : Router, Host (Anything with IP)
+
+  ----How packets flow through the Internet----
+
+  - Let say Host A has DATA want to send to Host B - That DATA is a bunch of 1's and 0's Layer 2 and 3 don't know what they contain
+
+  - Since Host A know that DATA is going to send to Host B . Host A will add Layer 3 infomation to that data
+
+  - Layer 3 Infomation is contain : Source IP Address and Destination IP Address . In order to get that Data from one end to another
+
+  - But the First Step will be getting that Data to the First Router so Host A will add infomation of Layer 2 to that Data
+
+  - Layer 2 Infomation containe : Source MAC Address of Host A NIC and Destination MAC Address of the Frist Router NIC . Once data get there it will remove Layer 2 Infomation . From this point First Router knows data need to move to the Next Router , to do this Data will add another Layer 2 . so on and so on ...
+
+  - Until Data reach Host B . It will also remove Layer 3
+
+
+  - There is a ARP - Address Resolution Protocol tie Layer 2 and 3 together 
+```
 
 
 
